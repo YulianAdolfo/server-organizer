@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./serve-files-code/styles-server/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/uploadFile" enctype="multipart/form-data" method="POST">
+        <h2>Seleccione el archivo excel con extensión .xlsx</h2>
+        <div class="files-select">
+            <img src="./serve-files-code/images/folder.png" alt="">
+            <input type="file" name="file-excel" id="file-excel" onchange="analizeExtensionExcel()">
+        </div>
+        <button id="btn_send" type="submit">Enviar</button>
+    </form>
+    <p class="legend-author">Developed by: Yulian Adolfo Rojas</p>
+    <script src="serve-files-code/code-front/serverUpload.js"></script>
+</body>
+</html>

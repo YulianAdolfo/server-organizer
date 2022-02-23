@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./serve-files-code/styles-server/download.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div-form">
+        <form action="">
+            <h2>¡El archivo está listo!</h2>
+            <img src="./serve-files-code/images/excel-logo.jpg" alt="">
+            <p id="f-name">{{.Filename}}</p>
+            <p id="server-ip" style="display: none;">{{.AddrServer}}</p>
+            <br>
+        </form>
+        <button onclick="downloadMyFile()">Descargar</button>
+    </div>
+    <p class="legend-author">Developed by: Yulian Adolfo Rojas</p>
+    <script>
+        function downloadMyFile() {
+            let IPS_ADDR = document.getElementById("server-ip")
+            let PORT_SERV = "2021"
+            let filename = document.getElementById("f-name")
+            location.href = "http://"+IPS_ADDR.textContent+":"+PORT_SERV+"/ready-file/" + filename.textContent
+        }
+    </script>
+</body>
+</html>

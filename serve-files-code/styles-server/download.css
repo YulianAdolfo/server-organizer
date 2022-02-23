@@ -1,0 +1,46 @@
+.div-form {
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 0 10px 10px #ddd;
+}
+form img  {
+    width: 20%;
+}
+button {
+    font-size: 20px;
+    width:300px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #00adef;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    outline:none;
+}
+button:hover {
+ background-color: #0082b2;   
+}
+form p {
+    font-style: italic;
+    
+    color: grey;
+}
+.legend-author {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: grey;
+    font-style: oblique;
+}

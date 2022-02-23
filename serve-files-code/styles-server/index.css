@@ -1,0 +1,87 @@
+form {
+    width: 700px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: 0 0 10px 10px #ddd;
+}
+form h2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+form img {
+    width: 10%;
+}
+label {
+    margin-right: 10px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+} 
+button {
+    width: 200px;
+    background-color: #00adef;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    outline-color: #00adef;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 150px;
+}
+button:hover {
+    background-color: #008ec1;
+}
+input[type="file"] {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+input[type="file"]:input {
+    color: red;
+}
+.alert-info {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 2s linear;
+}
+.alert-info p{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 2s linear;
+}
+.files-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.files-select img  {
+    margin-right: 10px;
+}
+.legend-author {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: grey;
+    font-style: oblique;
+}
